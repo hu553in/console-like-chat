@@ -43,7 +43,7 @@ This project uses:
 
 ### Linux
 
-1. Install:
+1. Install via package manager:
     * Make
     * CMake
     * gcc
@@ -53,11 +53,16 @@ This project uses:
 ### Windows
 
 1. Install [MSYS2](http://repo.msys2.org/distrib/msys2-x86_64-latest.exe)
-2. Install via MinGW console:
-    * Make
-    * CMake
-    * gcc
-    * g++
+2. Run the following command in MinGW console
+    ```
+    # pacman -Syu
+    ```
+3. Reopen MinGW console
+4. Run following commands in MinGW console:
+    ```
+    # pacman -Su
+    # pacman -S mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-pkg-config mingw-w64-x86_64-SDL2 mingw-w64-x86_64-make mingw-w64-x86_64-gdb
+    ```
 3. Add paths to directories with installed binaries to your system's `PATH` environment variable
 4. Run `mingw32-make.exe clean reload build` in the project root directory
 
