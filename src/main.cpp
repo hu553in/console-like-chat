@@ -32,7 +32,7 @@ int main(int argc, char *argv[]) {
     }
     auto mode = std::string(argv[1]);
     if (mode != CLIENT && mode != SERVER) {
-      throw std::invalid_argument("Invalid running mode is passed");
+      throw std::invalid_argument("Invalid running mode is passed\nAllowed modes: client, server");
     }
     auto req_rep_endpoint = std::string(argv[2]);
     auto pub_sub_endpoint = std::string(argv[3]);
