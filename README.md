@@ -9,8 +9,9 @@ In fact, this app is a console-like client-server chat.\
 It makes heavy use of things like multithreading and synchronization.
 
 Unfortunately, there're nng binaries only for 64-bit Linux at the moment.\
-I hope it's going to be fixed soon.\
-Besides, `./CMake/Findnng.cmake` is almost ready to the moment when we'll start to add binaries
+If you're going to use this demo on another OS, you should build them by yourself\
+using instructions from the official repository.
+Besides, `./CMake/Findnng.cmake` is almost ready to the moment of adding binaries
 for following operating systems:
 * 32-bit Linux
 * 32-bit Windows
@@ -50,7 +51,8 @@ This project uses:
     * CMake
     * gcc
     * g++
-3. Run `mingw32-make.exe clean reload build` in the project root directory
+3. Add paths to directories with installed binaries to your system's `PATH` environment variable
+4. Run `mingw32-make.exe clean reload build` in the project root directory
 
 ## Usage
 
