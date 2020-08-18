@@ -18,7 +18,7 @@ It makes heavy use of things like multithreading and synchronization.
 Unfortunately, there're nng binaries only for 64-bit Linux at the moment.\
 If you're going to use this demo on another OS, you should build them by yourself
 using instructions from the official repository.\
-Besides, `./CMake/Findnng.cmake` is almost ready to the moment of adding binaries
+However, `./CMake/Findnng.cmake` is almost ready to the moment of adding binaries
 for following operating systems:
 * 32-bit Linux
 * 32-bit Windows
