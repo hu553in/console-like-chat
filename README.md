@@ -43,7 +43,7 @@ This project uses:
 
 ### Linux
 
-1. Install via package manager:
+1. Install following packages via package manager:
     * Make
     * CMake
     * gcc
@@ -53,31 +53,36 @@ This project uses:
 ### Windows
 
 1. Install [MSYS2](http://repo.msys2.org/distrib/msys2-x86_64-latest.exe)
-2. Run the following command in MinGW console
-    ```
-    # pacman -Syu
-    ```
-3. Reopen MinGW console
+2. Run `pacman -Syu` in MinGW console
+3. Re-open MinGW console
 4. Run following commands in MinGW console:
     ```
-    # pacman -Su
-    # pacman -S mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-pkg-config mingw-w64-x86_64-SDL2 mingw-w64-x86_64-make mingw-w64-x86_64-gdb
+    pacman -Su
+    pacman -S mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-pkg-config mingw-w64-x86_64-SDL2 mingw-w64-x86_64-make mingw-w64-x86_64-gdb
     ```
-5. Add paths to directories with installed binaries to your system's `PATH` environment variable
+5. Add paths to directories with tools installed in the previous step to your system's `PATH` environment variable
 6. Run `mingw32-make.exe clean reload build` in the project root directory
 
 ## How to use
 
 ### Linux
 
+Run the following command in the project root directory:
 ```
-$ make exec_server REQ_REP_ENDPOINT=tcp://127.0.0.1:5555 PUB_SUB_ENDPOINT=tcp://127.0.0.1:5556
-$ make exec_client REQ_REP_ENDPOINT=tcp://127.0.0.1:5555 PUB_SUB_ENDPOINT=tcp://127.0.0.1:5556
+# server
+make exec_server REQ_REP_ENDPOINT=tcp://127.0.0.1:5555 PUB_SUB_ENDPOINT=tcp://127.0.0.1:5556
+
+# client
+make exec_client REQ_REP_ENDPOINT=tcp://127.0.0.1:5555 PUB_SUB_ENDPOINT=tcp://127.0.0.1:5556
 ```
 
 ### Windows
 
+Run the following command in the project root directory:
 ```
-$ mingw32-make.exe exec_server REQ_REP_ENDPOINT=tcp://127.0.0.1:5555 PUB_SUB_ENDPOINT=tcp://127.0.0.1:5556
-$ mingw32-make.exe exec_client REQ_REP_ENDPOINT=tcp://127.0.0.1:5555 PUB_SUB_ENDPOINT=tcp://127.0.0.1:5556
+# server
+mingw32-make.exe exec_server REQ_REP_ENDPOINT=tcp://127.0.0.1:5555 PUB_SUB_ENDPOINT=tcp://127.0.0.1:5556
+
+# client
+mingw32-make.exe exec_client REQ_REP_ENDPOINT=tcp://127.0.0.1:5555 PUB_SUB_ENDPOINT=tcp://127.0.0.1:5556
 ```
