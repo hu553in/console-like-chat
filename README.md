@@ -63,8 +63,8 @@ This project uses:
     # pacman -Su
     # pacman -S mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-pkg-config mingw-w64-x86_64-SDL2 mingw-w64-x86_64-make mingw-w64-x86_64-gdb
     ```
-3. Add paths to directories with installed binaries to your system's `PATH` environment variable
-4. Run `mingw32-make.exe clean reload build` in the project root directory
+5. Add paths to directories with installed binaries to your system's `PATH` environment variable
+6. Run `mingw32-make.exe clean reload build` in the project root directory
 
 ## How to use
 
