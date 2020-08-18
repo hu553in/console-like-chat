@@ -15,7 +15,7 @@ void run(const std::string &mode, const std::string &req_rep_endpoint, const std
   };
   auto function_ptr = function_ptrs_for_modes.find(mode);
   if (function_ptr == function_ptrs_for_modes.end()) {
-    throw std::invalid_argument("Invalid running mode is passed");
+    throw std::invalid_argument("Invalid running mode is passed\nAllowed modes: client, server");
   }
   std::stringstream endpoint;
   std::__invoke(function_ptr->second, req_rep_endpoint.c_str(), pub_sub_endpoint.c_str());
