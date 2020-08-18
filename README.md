@@ -28,7 +28,7 @@ This project uses:
 * [nng](https://github.com/nanomsg/nng)
 * [nngpp](https://github.com/cwzx/nngpp) (modern C++ wrapper for nng)
 * [BearLibTerminal](http://foo.wyrd.name/en:bearlibterminal)
-* [date](https://github.com/HowardHinnant/date) (for showing dates)
+* [date](https://github.com/HowardHinnant/date) (for showing dates and times)
 * [CMake](https://cmake.org/) (for building)
 * [Make](https://www.gnu.org/software/make/) (for building, running, etc)
 
@@ -54,7 +54,7 @@ This project uses:
 3. Add paths to directories with installed binaries to your system's `PATH` environment variable
 4. Run `mingw32-make.exe clean reload build` in the project root directory
 
-## Usage
+## How to use
 
 ### Linux
 
