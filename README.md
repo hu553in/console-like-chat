@@ -1,5 +1,12 @@
 # blt-nng-demo
 
+## Table of contents
+
+* [Description](#description)
+* [Tech stack](#tech-stack)
+* [How to build](#how-to-build)
+* [How to use](#how-to-use)
+
 ## Description
 
 This project is an example of using [nng](https://github.com/nanomsg/nng) in the app based
