@@ -5,7 +5,7 @@
 * [Description](#description)
 * [Tech stack](#tech-stack)
 * [How to build](#how-to-build)
-* [How to use](#how-to-use)
+* [How to run](#how-to-run)
 
 ## Description
 
@@ -30,44 +30,37 @@ Binaries should be added in the same way as BearLibTerminal binaries
 
 ## Tech stack
 
-This project uses:
 * C++20
-* [nng](https://github.com/nanomsg/nng)
-* [nngpp](https://github.com/cwzx/nngpp) (modern C++ wrapper for nng)
-* [BearLibTerminal](http://foo.wyrd.name/en:bearlibterminal)
-* [date](https://github.com/HowardHinnant/date) (for showing dates and times)
-* [CMake](https://cmake.org/) (for building)
-* [Make](https://www.gnu.org/software/make/) (for building, running, etc)
+* nng
+* nngpp (modern C++ wrapper for nng)
+* BearLibTerminal
 
 ## How to build
 
 ### Linux
 
-1. Install following packages via package manager:
-    * Make
-    * CMake
-    * gcc
-    * g++
-2. Run `make clean reload build` in the project root directory
+1. Install `CMake`, `GNU Make`, `gcc`, `g++`
+2. Run `make clean reload build`
 
 ### Windows
 
-1. Install [MSYS2](http://repo.msys2.org/distrib/msys2-x86_64-latest.exe)
-2. Run `pacman -Syu` in MinGW console
-3. Re-open MinGW console
-4. Run following commands in MinGW console:
+1. Install MSYS2
+2. Run `pacman -Syu` in the MinGW console
+3. Re-open the MinGW console
+4. Run following commands in the MinGW console:
     ```
     pacman -Su
     pacman -S mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-pkg-config mingw-w64-x86_64-SDL2 mingw-w64-x86_64-make mingw-w64-x86_64-gdb
     ```
-5. Add paths to directories with tools installed in the previous step to your system's `PATH` environment variable
-6. Run `mingw32-make.exe clean reload build` in the project root directory
+5. Add paths to directories with tools installed in the previous step
+to your system's `PATH` environment variable
+6. Run `mingw32-make.exe clean reload build`
 
-## How to use
+## How to run
 
 ### Linux
 
-Run the following command in the project root directory:
+Run the following command:
 ```
 # server
 make exec_server REQ_REP_ENDPOINT=tcp://127.0.0.1:5555 PUB_SUB_ENDPOINT=tcp://127.0.0.1:5556
@@ -78,7 +71,7 @@ make exec_client REQ_REP_ENDPOINT=tcp://127.0.0.1:5555 PUB_SUB_ENDPOINT=tcp://12
 
 ### Windows
 
-Run the following command in the project root directory:
+Run the following command:
 ```
 # server
 mingw32-make.exe exec_server REQ_REP_ENDPOINT=tcp://127.0.0.1:5555 PUB_SUB_ENDPOINT=tcp://127.0.0.1:5556
