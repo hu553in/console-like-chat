@@ -39,7 +39,7 @@ Binaries should be added in the same way as BearLibTerminal binaries
 
 ### Linux
 
-1. Install `CMake`, `GNU Make`, `gcc`, `g++`
+1. Install CMake, GNU Make, gcc, g++
 2. Run `make clean reload build`
 
 ### Windows
