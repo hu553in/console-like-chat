@@ -1,4 +1,4 @@
-# blt-nng-demo
+# Console-like chat
 
 ## Table of contents
 
